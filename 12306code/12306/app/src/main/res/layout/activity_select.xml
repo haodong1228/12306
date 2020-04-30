@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical" >
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="支付确认"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:background="#5AAADC"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/button01"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:text="11111111"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:background="#5AAADC"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/image_start"
+                            android:layout_width="15sp"
+                            android:layout_height="15sp"
+                            android:background="@drawable/start"/>
+
+                        <TextView
+                            android:id="@+id/start"
+                            android:layout_width="80sp"
+                            android:text="1111"
+                            android:textColor="#424242"
+                            android:textSize="18dp"
+                            android:layout_height="25sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/start_time"
+                            android:layout_width="70sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            android:gravity="right"
+                            android:text="1111"
+                            android:textSize="16dp"
+                            android:textColor="#4876FF" />
+                        <TextView
+                            android:layout_width="70sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            android:textColor="#4876FF"
+                            android:text="  出发"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    <Button
+                        android:background="@null"
+                        android:id="@+id/checi"
+                        android:layout_gravity="center"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="G20"
+                        android:textColor="#4169E1"
+                        android:textSize="24dp" />
+                    <ImageView
+                        android:id="@+id/image_card"
+                        android:layout_width="70sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/card"/>
+
+                    <Button
+                        android:background="@null"
+                        android:id="@+id/take_time"
+                        android:layout_gravity="center"
+                        android:layout_width="70sp"
+                        android:layout_height="25sp"
+                        android:text="1111"
+                        android:textSize="12dp"
+                        android:textColor="#919191"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/image_arrive"
+                            android:layout_width="14dp"
+                            android:layout_height="15sp"
+                            android:background="@drawable/mid" />
+
+                        <TextView
+                            android:id="@+id/arrive"
+                            android:text="1111"
+                            android:textColor="#424242"
+                            android:textSize="18dp"
+                            android:layout_width="70sp"
+                            android:layout_height="25sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/arrive_time"
+                            android:layout_width="70sp"
+                            android:layout_height="20sp"
+                            android:text="1111"
+                            android:textSize="16dp"
+                            android:gravity="right"
+                            android:layout_gravity="center"
+                            android:textColor="#4876FF" />
+                        <TextView
+                            android:layout_width="70sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            android:textColor="#4876FF"
+                            android:text="  到达"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="1dp"
+                android:background="#919191"
+                >
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/an1"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="80dp"
+                    android:text="商务\n有\n￥500"
+                    android:background="#FFFFFF"/>
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="80dp"
+                    android:text="     \n   \n  "
+                    android:background="#FFFFFF"/>
+                <Button
+                    android:id="@+id/an2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="80dp"
+                    android:text="一等\n有\n￥300"
+                    android:background="#FFFFFF"/>
+                <Button
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="80dp"
+                    android:text="     \n   \n  "
+                    android:background="#FFFFFF"/>
+                <Button
+                    android:id="@+id/an3"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="80dp"
+                    android:text="二等\n有\n￥200"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp">
+                <Button
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/addpeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#ffffff"
+                    android:textColor="#F4BE5B"
+                    android:text="⊕乘客"
+                    android:textSize="18dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/message_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textColor="#424242"
+                    android:gravity="center"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="提交订单"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#FF0000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:text="温馨提示："/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:text="请仔细确认订单，无误后再提交购票。"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/chepiaoyuding"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#4D4D4D"
+            android:textColor="#C2C2C2"
+            android:text="车票预订"/>
+        <Button
+            android:id="@+id/shanglvfuwu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#C2C2C2"
+            android:text="商旅服务"/>
+        <Button
+            android:id="@+id/dingdanchaxun"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#C2C2C2"
+            android:text="订单查询"/>
+        <Button
+            android:id="@+id/wode12306"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#333333"
+            android:textColor="#C2C2C2"
+            android:text="我的12306"/>
+    </LinearLayout>
+</RelativeLayout>

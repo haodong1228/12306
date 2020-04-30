@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#53A7DE">
+        <Button
+            android:id="@+id/before"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="前一天"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:background="#6BB2E1"/>
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/show_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="上海---北京"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF" />
+            <TextView
+                android:id="@+id/show_date"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:text="2017-11-11"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/after"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="后一天"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:background="#6BB2E1"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

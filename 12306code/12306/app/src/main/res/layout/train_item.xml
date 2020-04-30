@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/checi"
+                android:textSize="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_width="60sp"
+                android:layout_height="40sp"
+                android:textColor="#424242"
+                android:text="G102"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_start"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:background="@drawable/start"/>
+
+                    <TextView
+                        android:id="@+id/start"
+                        android:textColor="#424242"
+                        android:layout_width="80sp"
+                        android:layout_height="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="70sp"
+                    android:layout_height="20sp"
+                    android:textSize="12dp"
+                    android:textColor="#96B6D2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/image_card"
+                    android:layout_width="70sp"
+                    android:layout_height="15sp"
+                    android:background="@drawable/card"/>
+
+                <Button
+                    android:background="@null"
+                    android:id="@+id/take_time"
+                    android:layout_width="70sp"
+                    android:layout_height="25sp"
+                    android:textColor="#919191"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2sp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/image_arrive"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:background="@drawable/mid"/>
+
+                    <TextView
+                        android:id="@+id/arrive"
+                        android:textColor="#424242"
+                        android:layout_width="70sp"
+                        android:layout_height="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/arrive_time"
+                    android:layout_width="70sp"
+                    android:layout_height="20sp"
+                    android:textSize="12dp"
+                    android:textColor="#96B6D2" />
+            </LinearLayout>
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/xiala"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/down"/>
+            <TextView
+                android:layout_width="10sp"
+                android:layout_height="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/shangwu"
+                android:layout_marginLeft="8dp"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"
+                android:text="商务：" />
+
+            <TextView
+                android:id="@+id/shangwu_ticket"
+                android:textColor="#147618"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/yideng"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"
+                android:text="一等：" />
+
+            <TextView
+                android:id="@+id/yideng_ticket"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"
+                android:textColor="#147618" />
+
+            <TextView
+                android:id="@+id/erdeng"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"
+                android:text="二等：" />
+
+            <TextView
+                android:id="@+id/erdeng_ticket"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"
+                android:textColor="#147618" />
+
+            <TextView
+                android:id="@+id/wuzuo"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"
+                android:text="无座：" />
+
+            <TextView
+                android:id="@+id/wuzuo_ticket"
+                android:layout_width="40sp"
+                android:layout_height="15sp"
+                android:textSize="10sp"
+                android:textColor="#147618" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="2dp"
+            android:background="#919191"
+            android:layout_marginBottom="2dp">
+
+        </View>
+    </LinearLayout>
+
+</LinearLayout>

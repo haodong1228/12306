@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#5AAADC"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="手机核验"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="      为了保护您的信息安全，便于今后为您服务，请按以下程序进行手机双向核验："/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="第一步：请你用需要核验的手机号发送短信999至12306，以便确认你的手机可以联络。"/>
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:text="第二步：12036接到您的短信后，会发送给您的手机一个四位数短信，请您在十分钟内将六位数字短信填写在下方验证码空白栏处，并点击提交按钮。" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <Button
+                android:id="@+id/getcord"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cord"
+                android:layout_toRightOf="@+id/cord"
+                android:visibility="visible"
+                android:textSize="18dp"
+                android:text="获取短信验证码"
+                android:textColor="#4169E1"
+                android:layout_marginRight="20pt"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:text="手  机  号："
+        android:textSize="18dp"
+        android:layout_marginLeft="20pt"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:maxLength="11"
+        android:ems="11"
+        android:inputType="phone" >
+        <requestFocus />
+    </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#FFFFFF"
+            >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/phone"
+            android:text="验  证  码："
+            android:textSize="18dp"
+            android:layout_marginLeft="20pt"/>
+        <EditText
+            android:id="@+id/cord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/phone"
+            android:ems="4"
+            android:maxLength="4"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/savecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cord"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn_bg"
+        android:text="提  交" />
+    <TextView
+        android:id="@+id/now"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/savecord"
+        android:layout_toRightOf="@+id/cord"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text=" "
+        android:textColor="#aaaaaa" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="温馨提示："/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="1. 一个用户一天可以获取三次手机核验的短信验证码。"/>                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:text="2. 手机核验通过的用户可以使用手机号码登录12306网站和手机客户端。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="3. 手机核验通过的用户能在12306网站和手机客户端办理邮箱修改和密码修改等业务。"
+                />
+            </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
